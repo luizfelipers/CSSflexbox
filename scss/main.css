@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Fira sans', sans-serif;
+}
+
+main {
+  padding: 16px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  margin-bottom: 16px;
+}
+
+.has-spacer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.has-spacer .spacer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0%;
+          flex: 1 1 0%;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  background-color: lightskyblue;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-box-shadow: 1px 1px  black;
+          box-shadow: 1px 1px  black;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: blue;
+  -webkit-box-shadow: 1px 2px 5px black;
+          box-shadow: 1px 2px 5px black;
+}
+
+.flex-grid {
+  display: block;
+  padding-top: 150px;
+}
+
+@media (min-width: 960px) {
+  .flex-grid {
+    padding-top: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .flex-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 -8px;
+  }
+}
+
+.flex-grid .col {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: salmon;
+  border-radius: 10px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .flex-grid .col {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    margin: 0px 8px 16px;
+    max-width: calc(50% - 16px);
+    min-height: 400px;
+  }
+  .flex-grid .col:nth-child(2n-1) {
+    margin-top: -100px;
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 960px) {
+  .flex-grid .col {
+    max-width: calc(33% - 16px);
+  }
+  .flex-grid .col:nth-child(2n-1) {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .flex-grid .col {
+    max-width: calc(25% - 16px);
+  }
+}
+
+.align-self-end {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+/*# sourceMappingURL=main.css.map */
